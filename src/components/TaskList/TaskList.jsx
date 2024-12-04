@@ -1,4 +1,4 @@
-export default function TaskList(){
+export default function TaskList({data}){
     return (
         <div id="tasklist" className="h-[55%] overflow-x-auto flex items-center justify-start gap-5 flex-nowrap w-full py-5 mt-10">
             <div className="h-full flex-shrink-0 p-5 w-[300px] bg-orange-400 rounded-xl ">

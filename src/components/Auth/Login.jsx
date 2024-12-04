@@ -1,14 +1,13 @@
 import { useState } from "react"
 
-export default function Login(){
-
+export default function Login({handleLogin}){
+    
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const submitHandler = (e)=>{
          e.preventDefault()
-         console.log("email is ", email)
-         console.log("password is ", password);
+         handleLogin(email,password)
          setEmail("")
          setPassword("")
          
